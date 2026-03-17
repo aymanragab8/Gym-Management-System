@@ -500,7 +500,6 @@ Configure JWT authentication in `appsettings.json`:
 **Ayman Ragab**
 
 - 💼 Backend Developer specializing in ASP.NET Core
-- 🎓 Computer Science Student
 - 📧 Email: aymanragab2298@gmail.com
 - 🌐 GitHub: [@aymanragab8](https://github.com/aymanragab8)
 - 💼 LinkedIn: [Ayman Ragab](https://www.linkedin.com/in/ayman-ragab8/)
