@@ -1,0 +1,65 @@
+
+    ** relationships
+            
+            Member 1 ـــ M Subscription
+            Member 1 ـــ M WorkoutPlan
+            Member 1 ـــ M Attendance
+            Member 1 ـــ M Payment
+            Subscription 1 ـــ M Payment
+            WorkoutPlan 1 ـــ M WorkoutPlanExercise
+            Exercise 1 ـــ M WorkoutPlanExercise
+
+   ** Roles
+            Admin :
+                - Create, Read, Update, Delete (CRUD) جميع الأعضاء
+                - Create, Read, Update, Delete كل الاشتراكات
+                - Create, Read, Update, Delete كل خطط التمارين
+                - Create, Read, Update, Delete كل التمارين
+                - View only، متابعة حضور الأعضاء
+                - View only، متابعة المدفوعات والفواتير
+
+            Coach :
+
+               - Members	(View  لا يقدر يعدل أو يحذف)
+               - Subscriptions	View فقط
+               - Workout Plans	View , Update For Only Plans Created By Him، متابعة خطط التمارين الخاصة به فقط            
+               - Exercises	View , Create , Update  إمكانية إضافة أو تعديل التمارين الخاصة بالـ خطة التدريب
+               - Attendance	Create / Update، متابعة حضور الأعضاء الذين يتدربون معه
+               - Payments	لا يقدر يشوف
+
+            Member :
+                - View and Update Personal Profile
+                - View Available Workout Plans
+                - View and Subscribe to Workout Plans
+                - View Personal Attendance Records
+                - View Personal Payment History
+
+
+      **  الخلاصة لبناء النظام **
+
+Admin = full access تقريبًا لكل شيء.
+Coach = limited access للعرض + التحكم في الحضور والخطط التدريبية للأعضاء المسؤول عنهم.
+Member = فقط عرض البيانات الشخصية + معلومات اشتراكه وخطة تمرينه.
+
+**   EndPoints  **
+
+Member Endpoints:
+    GetAll
+    GetById
+    Create
+    Update
+    Delete
+
+Subscription Endpoints:
+    GetAll
+    GetById
+    Create
+    Update
+    Delete
+
+
+
+
+
+
+

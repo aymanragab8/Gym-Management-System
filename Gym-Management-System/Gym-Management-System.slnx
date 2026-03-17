@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Notes/">
+    <File Path="Requierments.txt" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="../GymSystem.Application/GymSystem.Application.csproj" />
+  <Project Path="../GymSystem.Domain/GymSystem.Domain.csproj" />
+  <Project Path="../GymSystem.Infrastructure/GymSystem.Infrastructure.csproj" />
+  <Project Path="Gym-Management-System.csproj" />
+</Solution>
